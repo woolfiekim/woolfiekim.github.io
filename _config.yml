@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko_KR"
-title                    : "My growth daily diary"
+title                    : "My growth daily diary" 
 title_separator          : "|"
 subtitle                 : "Programming & Seoul"
 name                     : "Joohee kim"
