@@ -22,7 +22,11 @@ subtitle                 : "Programming & Seoul"
 name                     : "Joohee kim"
 description              : "쥬씨의 상경 & 성장 블로그입니다."
 url                      : "https://woolfiekim.github.io"
+<<<<<<< HEAD
 baseurl                  : # the subpath of your site, e.g. "/blog"
+=======
+baseurl                  : # "/blog"
+>>>>>>> 9bb655b6695f95c0899f1edc8425fefe28f3078b
 repository               : "woolfiekim/woolfiekim.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/shrimp.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
