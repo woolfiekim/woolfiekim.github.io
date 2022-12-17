@@ -33,3 +33,9 @@ MyEntity me = new MyEntity(val);
 |boolean|Boolean|
 |long|Long|
 |short|Short|
+
+## 박싱(Boxing)과 언박싱(UnBoxing)
+
+- 박싱은 기본타입 > 래퍼클래스로 바꾸는 과정
+- 언박싱은 그 반대로 래퍼클래스 > 기본타입으로 바꾸는 과정
+  
