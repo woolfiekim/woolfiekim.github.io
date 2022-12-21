@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "[JAVA] jakarta 와  javax"
+title:  "[JAVA] project setting"
 categories: project  #카테고리
-tag: [java, java17, jpa, queryDSL, jakarta, javax] #태그
+tag: [java, java17, jpa, queryDSL, spring security, lombok, build.gradle] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정
 author_profile: false  #왼쪽에 자기 소개란 프로필을 이 페이지에 들어갈때 끄는 기능
@@ -22,7 +22,7 @@ search: true  #이 페이지는 검색에 나옴.
 2. jpa
 3. spring boot security
 4. lombok
-5. mysql
+5. mariaDB
 6. p6spy
 7. Apache commons
 8. queryDSL
