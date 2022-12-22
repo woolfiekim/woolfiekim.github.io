@@ -11,8 +11,8 @@ docs:   #목차
     children:
       - title: "java"
         url: /java/
-      - title: "알고리즘"
-        url: /algorithm/
+      - title: "project"
+        url: /project/
   - title: "일기"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
