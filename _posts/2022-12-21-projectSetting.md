@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[JAVA] project setting"
+title:  "[Spring] project setting"
 categories: project  #카테고리
 tag: [java, java17, jpa, queryDSL, spring security, lombok, build.gradle] #태그
 toc: true  #오른쪽에 있는 목차
@@ -11,9 +11,7 @@ sidebar:
 search: true  #이 페이지는 검색에 나옴.
 ---
 
-프로젝트를 하나 시작하게 되었다.
-
-이번에는 배움을 위해서 프로젝트를 하는 것이기 때문에 최대한 최신버전을 사용하고, 요즘 많이 쓰는 툴들도 사용하려고 한다.
+시작하는 프로젝트의 세팅을 보여주겠다.
 
 ## spring project setting
 
