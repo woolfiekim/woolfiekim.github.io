@@ -40,3 +40,43 @@ search: true  #이 페이지는 검색에 나옴.
 일반적인 환경에서는 한 대의 서버 혹은 컴퓨터에서 한 벌만 설치할 수 있는 소프트웨어가 대부분이다.
 
 도커를 사용하게 된다면 같은 소프트웨어를 여러 벌 설치가 가능하다.(각 컨테이너에 하나씩 넣으면 된다.)
+
+```plaintext
+즉, 도커를 사용하면
+1. 프로그램을 완전히 격리시켜 독립적인 환경에서 안전하게 운영할 수 있다.
+( 무엇을 업데이트하더라도 서로 영향을 미치지 않는다.)
+2. 컨테이너 기술을 활용하면 여러 개의 웹 서버를 올릴 수 있다.
+(물리 서버의 수를 줄일 수 있다.)
+3. 운영체제가 달라도 컨테이너를 옮길 수 있다.
+(물리적 환경의 차이, 서버 구성의 차이를 무시)
+```
+
+이러한 이유 때문에 DB를 직접 설치해서 사용하지 않고 도커를 이용해 사용하기로 결정을 내렸다.
+
+도커를 사용하기 위해 명령어를 사용하지 않고 docker-compose.yml 파일을 사용하였다.
+```plaintext
+[명령어]
+
+docker run \
+    --name mariadb \
+    -d \
+    -p 3306:3306 \
+    --restart=always \
+    -e MYSQL_ROOT_PASSWORD=root \
+    mariadb
+```
+
+```plaintext
+[docker-compose.yml]
+
+version: "3.8"
+
+services:
+  mariadb:
+    container_name: mariadb
+    image: mariadb
+    ports:
+        - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+```
