@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dev:
+    image: blog
+    command: ["jekyll", "serve", "--incremental", "--livereload"]
+    ports:
+      - "4000:4000"
+    volumes:
+      - $PWD:/srv/jekyll
