@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[JAVA] 래퍼클래스(Wrapper Class)"
-categories: java  #카테고리
+categories: Java  #카테고리
 tag: [java, blog, github, type, Wrapper Class, boxing, unboxing] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정

@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[Spring] project setting"
-categories: project  #카테고리
+categories: Project  #카테고리
 tag: [docker, mariaDB, intelliJ] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정

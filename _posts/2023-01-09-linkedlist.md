@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[DATA STRUCTURE] 자료구조 - 링크드 리스트(Linked List)"
-categories: DATA_STRUCTURE  #카테고리
+categories: Data structure  #카테고리
 tag: [data structure, algorithm, 알고리즘, 자료구조, 링크드리스트, linked list, 파이썬, python] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정
