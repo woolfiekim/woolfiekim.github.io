@@ -6,14 +6,14 @@ main:
     url: /tags/   #태그
   - title: "Search"
     url: /search   #검색
-docs:   #목차
-  - title: "CODING"
-    children:
-      - title: "java"
-        url: /java/
-      - title: "project"
-        url: /project/
-  - title: "일기"
+# docs:   #목차
+#   - title: "CODING"
+#     children:
+#       - title: "java"
+#         url: /java/
+#       - title: "project"
+#         url: /project/
+#   - title: "일기"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
