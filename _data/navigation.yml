@@ -2,7 +2,7 @@
 main:
   - title: "Category"
     url: /categories/  #카테고리
-  - title: "Tag"
+  - title: "Tags"
     url: /tags/   #태그
   - title: "Search"
     url: /search   #검색
