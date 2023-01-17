@@ -11,7 +11,7 @@ sidebar:
     nav: "docs" #navigation.yml에 있는 docs를 뜻한다.
 search: true  #이 페이지는 검색에 나옴.
 ---
-
+test
 회사에서 일을 하는 데 갑자기 DB 연결이 끊겼다. 
 
 당황하지 않고 나는 선임을 불렀다.
