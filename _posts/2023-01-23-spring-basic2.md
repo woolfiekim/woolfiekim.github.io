@@ -74,3 +74,4 @@ ex) 메시지 소스를 활용한 국제화 기능(한국-한국어 / 영어권-
 
 - 빈 설정 메타 정보라 한다.
 - `@Bean`, `<bean>` 당 각각 하나씩 메타 정보가 생성된다.
+- [<bean>예시](https://github.com/woolfiekim/sprint-basic-study/blob/master/src/main/resources/appConfig.xml)
