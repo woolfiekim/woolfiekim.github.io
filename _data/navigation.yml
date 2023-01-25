@@ -6,6 +6,10 @@ main:
     url: /tags/   #태그
   - title: "Search"
     url: /search   #검색
+
+sidebar-category:
+  - title: "카테고리"
+    url: 
 # docs:   #목차
 #   - title: "CODING"
 #     children:

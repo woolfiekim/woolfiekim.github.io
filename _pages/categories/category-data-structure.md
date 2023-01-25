@@ -1,7 +1,7 @@
 ---
 title: 'Data structure'
 layout: archive
-permalink: categories/data-structure
+permalink: categories/structure
 author_profile: true
 sidebar_main: true
 ---
