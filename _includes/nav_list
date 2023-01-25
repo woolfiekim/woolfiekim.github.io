@@ -32,7 +32,7 @@
             {% endif %}
           {% endfor %}
 
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}&nbsp;({{ post_cnt }})</a></li>
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %} style="font-size:16px;">{{ child.title }}&nbsp;({{ post_cnt }})</a></li>
           {% endfor %}
         </ul>
         {% endif %}
