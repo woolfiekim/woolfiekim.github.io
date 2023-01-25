@@ -1,5 +1,5 @@
 ---
-title: "Spring"
+title: "Ruby"
 layout: archive
 permalink: /ruby
 author_profile: true
