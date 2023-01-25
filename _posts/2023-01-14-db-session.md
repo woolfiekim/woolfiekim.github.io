@@ -1,7 +1,8 @@
 ---
 layout: single
 title:  "[Tibero] DB 세션 초과 이슈"
-categories: DB  #카테고리
+categories: 
+    - db  #카테고리
 tag: [db, tibero, oracle] #태그
 last_modified_at : 2023-01-17
 toc: true  #오른쪽에 있는 목차

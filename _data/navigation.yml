@@ -9,7 +9,23 @@ main:
 
 sidebar-category:
   - title: "카테고리"
-    url: 
+    children:
+      - title: "Java"
+        url: "/java"
+      - title: "Data structure"
+        url: "/data-structure"
+      - title: "Project"
+        url: "/project"
+      - title: "Python"
+        url: "/python"
+      - title: "Spring"
+        url: "/spring"
+      - title: "Docker"
+        url: "/docker"
+      - title: "DB"
+        url: "/db"
+      - title: "Ruby"
+        url: "/ruby"
 # docs:   #목차
 #   - title: "CODING"
 #     children:

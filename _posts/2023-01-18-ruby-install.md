@@ -1,7 +1,8 @@
 ---
 layout: single
 title:  "[Ruby] MacOS m1 jekyll minimal-mistakes theme ruby versions local"
-categories: Ruby  #카테고리
+categories: 
+  - ruby  #카테고리
 tag: [ruby, macOS, m1, jekyll, rbenv] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정
