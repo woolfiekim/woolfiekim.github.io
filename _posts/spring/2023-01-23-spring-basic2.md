@@ -31,13 +31,13 @@ search: true  #이 페이지는 검색에 나옴.
 
 - 애플리케이션 **실행 시점(런타임)**에 외부에서 실제 구현 객체를 생성하고 클라이언트에 전달해서 클라이언트와 서버의 실제 의존관계가 연결되는 것을 의존관계 주입이라 한다.
 - 의존관계 주입을 하면 클라이언트 코드, 정적인 클래스의 의존관계를 변경하지 않고, 동적인 객체 인스턴스 의존관계와 클라이언트가 호출하는 대상의 타입 인스턴스를 변경할 수 잇다.
-- 만든 예시의 [AppConfig](https://github.com/woolfiekim/sprint-basic-study/blob/master/src/main/java/hello/core/AppConfig.java)처럼 객체를 생성하고 관리하면서 의존관계를 연결해 주는 것을 IoC 컨테이너 or **DI 컨테이너**라 한다.
+- 만든 예시의 [AppConfig](https://github.com/woolfiekim/spring-basic-study/blob/master/src/main/java/hello/core/AppConfig.java)처럼 객체를 생성하고 관리하면서 의존관계를 연결해 주는 것을 IoC 컨테이너 or **DI 컨테이너**라 한다.
 - 또는 어셈블러, 오브젝트 팩토리 등으로 불리기도 한다.
 
 ## 5.  스프링 컨테이너
 
 - ApplicationContext를 스프링 컨테이너라 한다.
-- 스프링 컨테이너는 `@Configuration` 이 붙은 `[AppConfig](https://github.com/woolfiekim/sprint-basic-study/blob/master/src/main/java/hello/core/AppConfig.java)` 를 설정 정보로 사용한다.
+- 스프링 컨테이너는 `@Configuration` 이 붙은 `[AppConfig](https://github.com/woolfiekim/spring-basic-study/blob/master/src/main/java/hello/core/AppConfig.java)` 를 설정 정보로 사용한다.
 - `@Bean` 이라 적힌 메서드를 모두 호출해서 반환된 객체를 스프링 컨테이너에 등록한다. 이렇게 등록된 객체를 스프링 빈이라 한다.
 - 스프링 빈은 `@Bean` 이 붙은 메서드의 명을 스프링 빈의 이름으로 사용한다.
   - 빈 이름을 직접 부여할 수 있다. @Bean(name="memberService2")
@@ -51,7 +51,7 @@ search: true  #이 페이지는 검색에 나옴.
 `new AnnotationConfigApplicationContext(AppConfig.class);` 이 클래스는 `ApplicationContext` 인터페이스의 구현체이다.
 - (스프링 컨테이너에 넣은 스프링 빈을 확인하기)
 
-[sprint-basic-study/ApplicationContextInfoTest.java at master · woolfiekim/sprint-basic-study](https://github.com/woolfiekim/sprint-basic-study/blob/master/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java)
+[spring-basic-study/ApplicationContextInfoTest.java at master · woolfiekim/spring-basic-study](https://github.com/woolfiekim/spring-basic-study/blob/master/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java)
 
 ### 5-2 BeanFactory와 ApplicationContext
 
@@ -75,4 +75,4 @@ ex) 메시지 소스를 활용한 국제화 기능(한국-한국어 / 영어권-
 
 - 빈 설정 메타 정보라 한다.
 - `@Bean`, `<bean>` 당 각각 하나씩 메타 정보가 생성된다.
-- [<bean>예시](https://github.com/woolfiekim/sprint-basic-study/blob/master/src/main/resources/appConfig.xml)
+- [<bean>예시](https://github.com/woolfiekim/spring-basic-study/blob/master/src/main/resources/appConfig.xml)
