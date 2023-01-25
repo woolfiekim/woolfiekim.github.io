@@ -8,20 +8,20 @@ main:
     url: /search   #검색
 
 sidebar-category:
-  - title: "카테고리"
+  - title: "Develop"
     children:
       - title: "Java"
         url: "/java"
         category: "java"
-      - title: "Data structure"
-        url: "/data-structure"
-        category: "data-structure"
-      - title: "Project"
-        url: "/project"
-        category: "project"
-      - title: "Python"
-        url: "/python"
-        category: "python"
+      # - title: "Data structure"
+      #   url: "/data-structure"
+      #   category: "data-structure"
+      # - title: "Project"
+      #   url: "/project"
+      #   category: "project"
+      # - title: "Python"
+      #   url: "/python"
+      #   category: "python"
       - title: "Spring"
         url: "/spring"
         category: "spring"
@@ -31,9 +31,29 @@ sidebar-category:
       - title: "DB"
         url: "/db"
         category: "db"
+      # - title: "Ruby"
+      #   url: "/ruby"
+      #   category: "ruby"
+  - title: "Project"
+    children:
+      - title: "Project"
+        url: "/project"
+        category: "project"
+  - title: "Algorithm"
+    children: 
+      - title: "Data structure"
+        url: "/data-structure"
+        category: "data-structure"
+      - title: "Python"
+        url: "/python"
+        category: "python"
+  - title: "Ruby/Jekyll/minimal-mistakes"
+    children:
       - title: "Ruby"
         url: "/ruby"
         category: "ruby"
+
+
 # docs:   #목차
 #   - title: "CODING"
 #     children:
