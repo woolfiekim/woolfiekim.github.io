@@ -70,6 +70,50 @@ ex) org\.example\.Default.*
 - CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리
 ex) org.example.MyTypeFilter
 
+### 3. 중복 등록과 충돌
+
+1. 자동 빈 등록 vs 자동 빈 등록
+- 컴포넌트 스캔에 의해 자동으로 스프링 빈이 등록되는데, 그 이름이 같은 경우 스프링은 오류를 발생시킨다.
+    - ex) @Component(”nameA”) 가 또 있을 경우
+    - `ConflictingBeanDefinitionException` 예외 발생
+  
+1. 수동 빈 등록 vs 자동 빈 등록
+
+```java
+@Component //memoryMemberRepository
+public class MemoryMemberRepository implements MemberRepository {}
+```
+
+```java
+@Configuration
+  @ComponentScan(
+          excludeFilters = @Filter(type = FilterType.ANNOTATION, classes =
+  Configuration.class)
+  )
+  public class AutoAppConfig {
+      @Bean(name = "memoryMemberRepository")
+      public MemberRepository memberRepository() {
+          return new MemoryMemberRepository();
+      }
+}
+```
+
+이 경우 수동 빈 등록이 우선권을 가진다. (아래 꺼)
+
+(수동 빈이 자동 빈을 오버라이딩 해버린다. but!!! 스프링 부트는 오류가 발생하도록 해준다.)
+
+```java
+//spring - error message
+Overriding bean definition for bean 'memoryMemberRepository' with a different
+  definition: replacing
+```
+
+```java
+//spring boot - error message
+Consider renaming one of the beans or enabling overriding by setting
+spring.main.allow-bean-definition-overriding=true
+```
+
 
 
 
