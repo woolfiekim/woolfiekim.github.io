@@ -44,7 +44,7 @@ search: true  #이 페이지는 검색에 나옴.
     - 스프링 부트도 이 방법을 기본으로 제공한다.
     - `@SpringBootApplication` (스프링부트의 대표 시작 정보)을 이 프로젝트의 시작 루트 위치에 두는 것이 관례이다. 이 설정 안에 `@ComponentScan` 이 들어있다.
 
-1. 컴포넌트 스캔 기본 대상
+2. 컴포넌트 스캔 기본 대상
 
 컴포넌트 스캔의 대상
 
@@ -53,5 +53,24 @@ search: true  #이 페이지는 검색에 나옴.
 - `@Service` : 스프링 비즈니스 로직에서 사용
 - `@Repository` : 스프링 데이터 접근 계층에서 사용
 - `@Configuration` : 스프링 설정 정보에서 사용
+
+3. 필터
+- `includeFilters` : 컴포넌트 스캔 대상을 추가로 지정한다.
+- `excludeFilters` : 컴포넌트 스캔에서 제외할 대상을 지정한다.
+
+4. FilterType 옵션
+- ANNOTATION: 기본값, 애노테이션을 인식해서 동작한다.
+ex) org.example.SomeAnnotation
+- ASSIGNABLE_TYPE: 지정한 타입과 자식 타입을 인식해서 동작한다.
+ex) org.example.SomeClass
+- ASPECTJ: AspectJ 패턴 사용
+ex) org.example..*Service+
+- REGEX: 정규 표현식
+ex) org\.example\.Default.*
+- CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리
+ex) org.example.MyTypeFilter
+
+
+
 
 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.
