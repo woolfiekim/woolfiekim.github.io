@@ -35,6 +35,9 @@ sidebar-category:
       - title: "Python"
         url: "/python"
         category: "python"
+      - title: "Algorithm[JAVA]"
+        url: "/algorithm"
+        category: "algorithm"
   - title: "Ruby/Jekyll/minimal-mistakes"
     children:
       - title: "Ruby"
