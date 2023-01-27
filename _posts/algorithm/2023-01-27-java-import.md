@@ -20,3 +20,9 @@ search: true  #이 페이지는 검색에 나옴.
 import  java.util.Arrays;
 ```
 
+2. Queue 클래스 
+```java
+import java.util.LinkedList; 
+import java.util.Queue;
+```
+
