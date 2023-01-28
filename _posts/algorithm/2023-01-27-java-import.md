@@ -26,3 +26,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 ```
 
+3. Stack 클래스
+```java
+//  java.util.Stack 클래스 임포트
+import java.util.Stack; 
+```
