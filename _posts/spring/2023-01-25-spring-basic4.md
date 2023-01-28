@@ -117,4 +117,4 @@ spring.main.allow-bean-definition-overriding=true
 
 
 
-본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.
+> 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.

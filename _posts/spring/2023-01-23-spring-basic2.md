@@ -76,4 +76,4 @@ ex) 메시지 소스를 활용한 국제화 기능(한국-한국어 / 영어권-
 - [<bean>예시](https://github.com/woolfiekim/spring-basic-study/blob/master/src/main/resources/appConfig.xml)
 
 
-본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.
+> 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.
