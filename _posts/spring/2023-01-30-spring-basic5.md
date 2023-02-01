@@ -38,3 +38,17 @@ search: true  #이 페이지는 검색에 나옴.
 - 한 번에 여러 필드를 받을 수 있다.
 
 
+### 2. 옵션 처리
+
+주입할 스프링 빈이 없어도 동작하기 위해서 자동 주입 대상을 옵션으로 처리하는 방법
+
+- `@Autowired(required=false)` : 자동 주입할 대상이 없으면 수정자 메서드 자체가 호출 안됨
+- `org.springframework.lang.@Nullable` : 자동 주입할 대상이 없으면 null이 입력된다.
+- `Optional<>` : 자동 주입할 대상이 없으면 `Optional.empty`가 입력된다.
+
+[예시 코드](https://github.com/woolfiekim/spring-basic-study/blob/master/src/test/java/hello/core/autowired/AutowiredTest.java)
+
+### 3. 생성자 주입을 선택해라!
+
+[예시 코드와 설명](https://github.com/woolfiekim/spring-basic-study/blob/master/src/test/java/hello/core/order/OrderServiceImplTest.java)
+
