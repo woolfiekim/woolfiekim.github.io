@@ -52,3 +52,15 @@ search: true  #이 페이지는 검색에 나옴.
 
 [예시 코드와 설명](https://github.com/woolfiekim/spring-basic-study/blob/master/src/test/java/hello/core/order/OrderServiceImplTest.java)
 
+### 4. 롬복과 최신 트랜드
+
+- @Getter, @Setter, @ToString 등등이 있다.
+- `@RequiredArgsConstructor` : final 이 붙은 필드를 모아서 생성자를 자동으로 만들어준다. 그러면 `@Autowired를` 생략할 수 있다.
+
+### 5. @Autowired 필드명, @Qualifier, @Primary
+
+조회 대상 빈이 2개 이상일 때 해결 방법
+
+- `@Autowired` 필드 명 매칭
+- @Qualifie → @Qualifier 끼리 매칭 → 빈 이름 매칭
+- @Primary 사용
