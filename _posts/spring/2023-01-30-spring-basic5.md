@@ -62,5 +62,5 @@ search: true  #이 페이지는 검색에 나옴.
 조회 대상 빈이 2개 이상일 때 해결 방법
 
 - `@Autowired` 필드 명 매칭
-- @Qualifie → @Qualifier 끼리 매칭 → 빈 이름 매칭
-- @Primary 사용
+- `@Qualifie` → `@Qualifier` 끼리 매칭 → 빈 이름 매칭
+- `@Primary` 사용
