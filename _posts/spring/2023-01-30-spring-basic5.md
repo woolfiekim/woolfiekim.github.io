@@ -64,3 +64,6 @@ search: true  #이 페이지는 검색에 나옴.
 - `@Autowired` 필드 명 매칭
 - `@Qualifie` → `@Qualifier` 끼리 매칭 → 빈 이름 매칭
 - `@Primary` 사용
+
+
+> 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다.
