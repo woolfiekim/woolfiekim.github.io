@@ -22,6 +22,9 @@ sidebar-category:
       - title: "DB"
         url: "/db"
         category: "db"
+      - title: "JPA"
+        url: "/jpa"
+        category: "jpa"
   - title: "Project"
     children:
       - title: "Project"
