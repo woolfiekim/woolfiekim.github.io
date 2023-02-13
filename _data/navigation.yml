@@ -46,6 +46,11 @@ sidebar-category:
       - title: "Ruby"
         url: "/ruby"
         category: "ruby"
+  - title: "etc"
+    children:
+      - title: "program"
+        url: "/program"
+        category: "program"
 
 
 # docs:   #목차
