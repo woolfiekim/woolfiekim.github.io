@@ -11,3 +11,6 @@ sidebar:
     nav: "sidebar-category" #navigation.yml에 있는 docs를 뜻한다.
 search: true  #이 페이지는 검색에 나옴.
 ---
+## 1. 해쉬 테이블
+: Key, Value로 매핑하는 데이터 구조
+
