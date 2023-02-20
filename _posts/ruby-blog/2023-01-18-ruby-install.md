@@ -173,6 +173,6 @@ echo 'export PATH="/usr/local/opt/ruby@2.7/bin:$PATH"'
 ```shell
 bundle exec jekyll serve
 ```
-이것만 하면 local로 실시간 확인이 가능하게 되었다. 
+이것만 하면 local(localhost:4000)로 실시간 확인이 가능하게 되었다. 
 
 만세!!
