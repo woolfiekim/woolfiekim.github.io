@@ -51,7 +51,6 @@ sidebar-category:
       - title: "program"
         url: "/program"
         category: "program"
-    children:
       - title: "etc"
         url: "/etc"
         category: "etc"
