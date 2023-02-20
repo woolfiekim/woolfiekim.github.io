@@ -43,9 +43,9 @@ sidebar-category:
         category: "algorithm"
   - title: "Ruby/Jekyll/minimal-mistakes"
     children:
-      - title: "Ruby"
-        url: "/ruby"
-        category: "ruby"
+      - title: "Blog"
+        url: "/blog"
+        category: "blog"
   - title: "etc"
     children:
       - title: "program"
