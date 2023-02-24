@@ -1,9 +1,9 @@
 ---
 layout: single
-title:  "[] Mac 에 H2 설치하기"
+title:  "[tibero] session 끊기"
 categories: 
     - db  #카테고리
-tag: [db, h2, mac] #태그
+tag: [db, tibero, session, transaction] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정
 author_profile: true  #왼쪽에 자기 소개란 프로필을 이 페이지에 들어갈때 끄는 기능
