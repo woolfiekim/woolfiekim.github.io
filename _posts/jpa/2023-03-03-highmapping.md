@@ -16,9 +16,9 @@ search: true  #이 페이지는 검색에 나옴.
 
 - 관계형 DB는 상속 관계 못함.
 - 실제 물리 모델로 구현하는 방법
-  - 1. 조인전략
-  - 2. 단일 테이블 전략
-  - 3. 구현 클래스마다 테이블 전략 (추천하지않음)
+  - 조인전략
+  - 단일 테이블 전략
+  - 구현 클래스마다 테이블 전략 (추천하지않음)
 
 - 주요 어노테이션
 1. @Inheritance(strategy = InheritanceType.XXX)
@@ -28,7 +28,8 @@ search: true  #이 페이지는 검색에 나옴.
 
 2. @DiscriminatorColumn(name = "dtype")
     - 조인할 때 하위 테이블의 이름들을 dtype이라는 컬럼에 넣는다. 
-    - dtype(이 어노테이션을 안 쓸 때 default값임)은 다른 컬럼 명으로 바꿀 수 있다.
+    - dtype은 다른 컬럼 명으로 바꿀 수 있다.
+    - 이 어노테이션을 안 쓸 때 DTYPE 이 default 값이다.
 
 3. @DiscriminatorValue("A")
     - 2번에서 dtype 컬럼 안에 넣어지는 테이블 이름을 바꾸는 것이다.
@@ -41,6 +42,8 @@ search: true  #이 페이지는 검색에 나옴.
 @DiscriminatorColumn(name = "dtype")
 @Getter @Setter
 public abstract class Item {
+    //abstract : 추상클래스를 적용하면 Item 테이블이 만들어지지 않는다.
+    //Item 테이블을 만들고 싶으면 astract을 빼라.
 
     @Id
     @GeneratedValue
