@@ -79,7 +79,28 @@ Album 테이블에 값이 넣어질 때, item 테이블의 dtype컬럼에 Album�
 
 - 공통 매핑 정보가 필요할 때 사용한다.
 - 예를 들어, 두 테이블에 id, name이 공통으로 들어갈 때 사용하는 것이다.
+- 추상클래스로 만드는 것을 권장.
+- 주로, 등록일, 수정일, 등록자, 수정자 같은 전체 엔티티에서 공통으로 적용하는 정보를 모을 때 사용한다.
 
+```java
+
+@Entity
+public class Member extends BaseEntity{
+    @Id
+    @GeneratedValue
+    @Column(name = "item_id")
+    private Long id;
+
+    private String name;
+}
+
+@MappedSuperclass
+public abstract class BaseEntity{
+    private String createdBy;
+    private LocalDateTime createdDate;
+}
+
+```
 
 
 > 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다. 
