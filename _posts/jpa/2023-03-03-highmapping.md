@@ -75,4 +75,11 @@ public class Album extends Item {
 
 Album 테이블에 값이 넣어질 때, item 테이블의 dtype컬럼에 Album이라는 값이 들어가는게 아니라 A가 들어간다.
 
+## 2. @MappedSuperclass
+
+- 공통 매핑 정보가 필요할 때 사용한다.
+- 예를 들어, 두 테이블에 id, name이 공통으로 들어갈 때 사용하는 것이다.
+
+
+
 > 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다. 
