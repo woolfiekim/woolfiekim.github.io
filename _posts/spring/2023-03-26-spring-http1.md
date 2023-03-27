@@ -71,4 +71,44 @@ TCP/IP 패킷 정보
 - 그래서 이것을 기억하기 쉽도록 이름으로 대신 쓰는 것이다.
 
 
+## URI(Uniform Resource Identifier)
+- Uri : locator, name 또는 둘 다 추가로 분류 될  수 있다. 
+  - URI(Resource Identifier) = URL(Resource Locator) + URN(Resource name)
+- Uniform : 리소스 식별하는 통일된 방식
+- Resource : URI로 식별할 수 있는 모든 것
+- Identifier : 항목 구분을 위한 필요한 정보
+
+- URN(Resource name) : 리소스에 이름을 부여 
+- URL(Resource Locator) : 리소스가 있는 위치를 지정 > 가장 많이 쓰임 (URI라고 생각하면 된다)
+
+## URL
+- 프로토콜 : https, http, ftp...
+- 호스트명 : www.google.com
+- 포트번호 : 443 (생략가능)
+- path : /home (리소스경로)
+- 쿼리 파라미터 : ?q=hello&a=true > key=value형태, ? 로 시작, &로 추가, 문자 형태
+
+
+## HTTP(HyperText Transfer Protocol)
+- 모든 것들을 전송한다. (ex. html, text, image, audio, video, file, json, xml ...)
+- 클라이언트 서버 구조
+- 무상태 프로토콜(Stateless), 비연결성(연결을 유지하지 않는 모델)
+- HTTP 메시지
+- 단순함, 확장 가능
+
+
+## 클라이언트 서버 구조
+- Request, Response 구조
+- 클라이언트는 서버에 요청을 보내고 응답이 올 때까지 대기한다.
+- 서버가 요청에 대한 결과를 만들어서 클라이언트에게 응답한다.
+
+
+## 무상태 프로토콜(Stateless)
+- 서버가 클라이언트의 상태를 보존하지 않는다. > 전에 있던 행동들을 이어서 행동하지않고 매번 새로운 행동을 한다.
+
+
+
+
+
+
 > 본 포스팅은 김영한 선생님의 강의를 보고 정리한 글입니다. 
