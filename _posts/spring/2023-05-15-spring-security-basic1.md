@@ -20,4 +20,17 @@ search: true  #이 페이지는 검색에 나옴.
 
 그렇다고 해서 spring boot를 예전 버전으로 돌리고 싶지 않기 때문에 3.0을 그대로 java 17을 써볼 것이다.
 
- 
+### SecurityConfig 설정
+
+인강에서는
+
+```java
+extends WebSecurityConfigurerAdapter
+```
+
+를 쓴다. WebSecurityConfigurerAdapter 는 java 17에서는 deprecated가 되어있어서 쓰지 못한다.
+
+WebSecurityConfigurerAdapter를 상속받고 configure 메소드를 오버라이딩 하는 방식을 쓰지 않도록 바뀌었다.
+
+대신, @Bean으로 커스텀한 설정을 등록하도록 만들면 된다.
+
