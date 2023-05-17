@@ -14,7 +14,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ## login 설정
 
-### 1. login Configuration 설정
+### 1. logout Configuration 설정
 
 ```java
 @Configuration
