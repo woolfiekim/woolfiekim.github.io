@@ -32,7 +32,7 @@ Incompatible because this component declares documentation and the consumer need
 
 세팅을 끝내고 create버튼을 눌렀더니 위와 같은 에러가 떴다. 
 
-![](/assets/images/2023-03/09/error1.png)
+![](/assets/images/2023/03/09/error1.png)
 
 사실 이 에러는 처음 프로젝트를 만들면 보여주는 Getting Started 를 자세히 들여다보면 답이 나와있다.
 
@@ -44,7 +44,7 @@ Incompatible because this component declares documentation and the consumer need
 
 자바 버전에 맞춰서 spring boot의 버전도 맞춰줬어야하는데 아뿔싸, 바꾸지 않은 것이다!
 
-![](/assets/images/2023-03/09/error2.png)
+![](/assets/images/2023/03/09/error2.png)
 
 위 사진처럼 build.gradle 파일로 들어가
 
@@ -60,4 +60,4 @@ sourceCompatibility = '1.8'
 
 그랬더니 빌드 성공!!
 
-![](/assets/images/2023-03/09/good.jpg)
+![](/assets/images/2023/03/09/good.jpg)

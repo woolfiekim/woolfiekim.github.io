@@ -27,6 +27,6 @@ search: true  #이 페이지는 검색에 나옴.
     1. 이중 연결 리스트라고도 함
     2. 양방향으로 연결되어 있어서 노드 탐색이 양쪽으로 모두 가능
 
-![doubly linked list](/assets/images/2023-02-10/doublyLinkedList.png)
+![doubly linked list](/assets/images/2023/02/10/doublyLinkedList.png)
 
 - 출처 : [위키피디아](https://www.fun-coding.org/00_Images/doublelinkedlist.png)

@@ -50,19 +50,19 @@ GUI툴을 사용하거나 명령어를 쓰는 방법이다. 둘 다 권한이 �
 
 ### (1) GUI툴을 이용해서 세션삭제
 
-![tiberoGUI](/assets/images/2023-02-24/tiberoGUI.png)
+![tiberoGUI](/assets/images/2023/02/24/tiberoGUI.png)
 
 Tibero studio라고 tibero를 관리하는 GUI툴이다.
 
-![sessionManager](/assets/images/2023-02-24/sessionManager.png)
+![sessionManager](/assets/images/2023/02/24/sessionManager.png)
 
 Session Manager에 들어간다.
 
-![Untitled](/assets/images/2023-02-24/list.png)
+![Untitled](/assets/images/2023/02/24/list.png)
 
 여기서 빨간 부분으로 표시한 Running 부분을 Session Close하면 된다.
 
-![Untitled](/assets/images/2023-02-24/sessionClose.png)
+![Untitled](/assets/images/2023/02/24/sessionClose.png)
 
 지금 사진에서는 Running이 많지 않다. 세션들을 다 쓰고 있는 상태라면 Running이 아주 많을 것이다. 그러면 해당 세션들을 Close하면 된다.
 

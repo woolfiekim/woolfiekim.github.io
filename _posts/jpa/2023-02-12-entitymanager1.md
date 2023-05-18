@@ -27,7 +27,7 @@ search: true  #이 페이지는 검색에 나옴.
 - 삭제 (removed)
     - **삭제**된 상태
 
-![entityLifeCycle.png](/assets/images/2023-02-12/entityLifeCycle.png)
+![entityLifeCycle.png](/assets/images/2023/02/12/entityLifeCycle.png)
 
 ```java
 EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");

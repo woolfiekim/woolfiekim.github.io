@@ -27,7 +27,7 @@ git remote add origin ~~~~
 
 여기서 물결표시에는
 
-![](/assets/images/2023-03/09/github.png)
+![](/assets/images/2023/03/09/github.png)
 
 여기서 복사한 url을 넣어주면 된다!
 
@@ -35,7 +35,7 @@ git remote add origin ~~~~
 
 갓 만든 프로젝트를 이제 깃헙에 commit하려고 한다. 
 
-![](/assets/images/2023-03/09/commit2.png)
+![](/assets/images/2023/03/09/commit2.png)
 
 커밋창에 가보니 `Unversioned Files` 란에 빨갛게 파일들이 떠있다.
 
@@ -57,10 +57,10 @@ commit창이 아니라 project 창에 가서
 
 ` cmd + option + a ` 이렇게 단축키를 누르면 
 
-![](/assets/images/2023-03/09/commit3.png)
+![](/assets/images/2023/03/09/commit3.png)
 
 짜쟈쟌~~ 초록색으로 `Changes` 란에 파일들이 초록색으로 변해있다. 
 
 이제 이대로 커밋하면 된당!
 
-![](/assets/images/2023-03/09/good.jpg)
+![](/assets/images/2023/03/09/good.jpg)

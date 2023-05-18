@@ -48,7 +48,7 @@ spring:
 
 이렇게 설정을 하면 되는데 client-id, client-secret은 구글 설정에서 꼭 알고 있어야하는 
 
-![](/assets/images/2023-02-28/google15.png)
+![](/assets/images/2023/02/28/google15.png)
 
 이 것들을 넣으면 된다.
 

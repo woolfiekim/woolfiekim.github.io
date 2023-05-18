@@ -48,7 +48,7 @@ setting도 생각없이 했던 것을 조금 더 생각해보기로 했다.
 
 intellij에서 새 프로젝트를 만들었다. 그리고 dependencies 부분이다.
 
-![](/assets/images/2023-03/09/setting1.png)
+![](/assets/images/2023/03/09/setting1.png)
 
 여기서 `Web` 카테고리에 `Spring Web` 과 `Spring Reactive Web` 이 있다. 
 
@@ -63,14 +63,14 @@ intellij에서 새 프로젝트를 만들었다. 그리고 dependencies 부분�
    3. 로컬 쓰레드를 쓰지 못하지만, 빠르다.(사용자가 많은 서비스에서 사용하기 용이)
    4. 요청이 들어오면 큐에 쌓는다.
 
-![](/assets/images/2023-03/09/aha.jpeg)
+![](/assets/images/2023/03/09/aha.jpeg)
 
 아하! 이런 차이가 있었구나! 나는 계속 쓸 툴이 아니라 쓰고 버리는 일회성 툴이고 그 툴은 나만 쓰기 때문에 1번을 사용해야하는 것을 명백하게 알 수 있다!
 
 + 추가로 `Web` 카테고리에 `Spring Web Services` 부분은 soap이나 WDSL같은 옛날 통신용이라고 한다. 현재는 거의 쓰지 않는다.
 
 
-![](/assets/images/2023-03/09/setting2.png)
+![](/assets/images/2023/03/09/setting2.png)
 
 세팅은 위와 같이 했다.
 

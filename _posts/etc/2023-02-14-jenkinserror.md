@@ -73,7 +73,7 @@ Finished: FAILURE
 
 그러다가 어떤 외국인의 답변을 보게 되었다.
 
-![answer](/assets/images/2023-02-14/answer.png)
+![answer](/assets/images/2023/02/14/answer.png)
 
 한 번 해보기로 했다.
 
@@ -89,4 +89,4 @@ systemctl restart jenkins
 
 어예~~ 됬다~~~
 
-![smile](/assets/images/2023-02-14/smile.jpg)
+![smile](/assets/images/2023/02/14/smile.jpg)

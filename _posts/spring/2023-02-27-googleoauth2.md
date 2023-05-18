@@ -28,68 +28,68 @@ spring 인강을 차례차례 듣고 있는 데 이러다가는 개인프로젝�
 
 [구글클라우드콘솔](https://console.cloud.google.com/)에 들어가면 된다. 
 
-![](/assets/images/2023-02-28/google1.png)
+![](/assets/images/2023/02/28/google1.png)
 
 웹 콘솔에 들어가서 저 빨간 박스를 클릭한다. (제가 이미 한번 테스트겸 만든 이름이 들어있지만 무시하시면 된다.)
 
-![](/assets/images/2023-02-28/google2.png)
+![](/assets/images/2023/02/28/google2.png)
 
 새 프로젝트를 누른다.
 
-![](/assets/images/2023-02-28/google3.png)
+![](/assets/images/2023/02/28/google3.png)
 
 필수 사항인 프로젝트 이름을 적는다. 
 
-![](/assets/images/2023-02-28/google4.png)
+![](/assets/images/2023/02/28/google4.png)
 
 위에 보면 파란색 박스처럼 생성한 프로젝트의 이름이 그대로 뜰 것이다. 
 그러면, OAuth 동의화면에 들어가서 "외부"를 클릭하고 만들기 버튼을 클릭한다.
 
-![](/assets/images/2023-02-28/google5.png)
+![](/assets/images/2023/02/28/google5.png)
 
 여기서 필수사항은 빨간 박스들이다. 앱 이름, 이메일, 개발자 연락처 정보를 적는다.
 
-![](/assets/images/2023-02-28/error.png)
+![](/assets/images/2023/02/28/error.png)
 
 여기서 나는 계속 "앱을 저장하는 중에 오류가 발생했습니다." 라고 에러가 뜨면서 저장이 되질 않았다. 
 
 이유를 확인해보니 프로젝트 이름에 "google"이 들어가서였다. google을 지우고 저장 후 계속을 눌렀더니 성공했다!
 
-![](/assets/images/2023-02-28/google6.png)
+![](/assets/images/2023/02/28/google6.png)
 
 그리고 범위를 추가해준다.
 
-![](/assets/images/2023-02-28/google7.png)
+![](/assets/images/2023/02/28/google7.png)
 
 이 부분은 자신이 원하는 부분을 선택하면 된다. 나는 위 빨간색 박스 3개만 골랐다.
 
 고른 뒤 업데이트를 해준다.
 
-![](/assets/images/2023-02-28/google8.png)
+![](/assets/images/2023/02/28/google8.png)
 
 그러면 파란색 박스처럼 내가 선택한 범위들이 뜰 것이다. 저장 후 계속을 누르자.
 
-![](/assets/images/2023-02-28/google9.png)
+![](/assets/images/2023/02/28/google9.png)
 
 테스트 사용자를 여기서 추가할 수 있다. 하지만, 나는 나 혼자 만들기 때문에 추가없이 하겠다. 
 
-![](/assets/images/2023-02-28/google10.png)
+![](/assets/images/2023/02/28/google10.png)
 
 이 부분은 요약이기 때문에 내가 지금까지 설정한 값들이 모여있다. 한번 보고 잘못 설정한 게 있는지 확인해보자.
 
-![](/assets/images/2023-02-28/google11.png)
+![](/assets/images/2023/02/28/google11.png)
 
 `사용자 인증 정보`에서 `사용자 인증 정보 만들기` 를 선택한다. 
 
-![](/assets/images/2023-02-28/google12.png)
+![](/assets/images/2023/02/28/google12.png)
 
 OAuth 클라이언트 ID를 선택한다.
 
-![](/assets/images/2023-02-28/google13.png)
+![](/assets/images/2023/02/28/google13.png)
 
 애플리케이션 유형을 선택해주면 되는데 일단 웹 애플리케이션을 선택했다. 
 
-![](/assets/images/2023-02-28/google14.png)
+![](/assets/images/2023/02/28/google14.png)
 
 그러면 위 사진과 같은 구성으로 나올 것이다. 유형에 따라서 구성은 다르게 나올 것이다. 
 
@@ -110,13 +110,13 @@ http://localhost:8080/login/oauth2/code/google
 설정을 나처럼 다르게 하지않았다면 위에 적은 그대로 바꾸지 않고 쓰면 된다. 
 
 
-![](/assets/images/2023-02-28/google15.png)
+![](/assets/images/2023/02/28/google15.png)
 
 만들기 버튼을 누르면 위 사진과 같은 창이 하나 뜰 것이다.
 
 이 ID와 비밀번호는 정말 중요하니 카피해서 어디다가 저장해둬야한다.
 
-![](/assets/images/2023-02-28/google16.png)
+![](/assets/images/2023/02/28/google16.png)
 
 확인 버튼을 누르면 이렇게 설정한 정보가 뜰 것이다. 
 

@@ -29,11 +29,11 @@ chatGPT는 진짜.... 후... 라이브러리 없이 사용하는 방법을 알�
 [openapi api key발급받는 사이트](https://platform.openai.com/docs/quickstart/build-your-application)에 들어간다.
 
 
-![](/assets/images/2023-03/03/chat2.png)
+![](/assets/images/2023/03/03/chat2.png)
 
 사이트에 들어가면 위 사진에 표시한 부분에 들어가서 `Create new secret key` 버튼을 누르면
 
-![](/assets/images/2023-03/03/chat3.png)
+![](/assets/images/2023/03/03/chat3.png)
 
 위처럼 키를 발급해준다.(참고로 저기 뜬 key는 삭제 했기 때문에 그대로 쓴다고 해도 써지질 않을 것이다. 따로 발급받길 바람.)
 
@@ -49,7 +49,7 @@ build.gradle 의 dependencies에 아래를 넣는다.
 implementation group: 'com.theokanning.openai-gpt3-java', name: 'client', version: '0.9.0'
 ```
 
-![](/assets/images/2023-03/03/chat1.png)
+![](/assets/images/2023/03/03/chat1.png)
 
 꼭 잊지말고 위 코끼리 모양을 누르자!!
 
@@ -77,7 +77,7 @@ implementation group: 'com.theokanning.openai-gpt3-java', name: 'client', versio
 
 ## 4. 실행 결과
 
-![](/assets/images/2023-03/03/chat4.png)
+![](/assets/images/2023/03/03/chat4.png)
 
 뭔가 앞에 쓸데없는 사족이 붙은 기분이 들지만 기분 탓일 것이다.
 

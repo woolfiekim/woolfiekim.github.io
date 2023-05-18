@@ -23,7 +23,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 일단 전체 구성도는 이렇다. 
 
-![](/assets/images/2023-03/28/tool1.png)
+![](/assets/images/2023/03/28/tool1.png)
 
 이번 게시물에서는 commons, configure, domain을 어떻게 구성했는지 간단하게 적을 것이다.
 
@@ -31,7 +31,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 우선, commons package부터 보자.
 
-![](/assets/images/2023-03/28/tool2.png)
+![](/assets/images/2023/03/28/tool2.png)
 
 보면 3개의 package 가 있다.
 
@@ -42,14 +42,14 @@ search: true  #이 페이지는 검색에 나옴.
 
 ## configure package
 
-![](/assets/images/2023-03/28/tool3.png)
+![](/assets/images/2023/03/28/tool3.png)
 
 여기서는 `@Configuration` 을 쓰는 클래스를 넣는 곳이다.
 
 
 ## domain package
 
-![](/assets/images/2023-03/28/tool4.png)
+![](/assets/images/2023/03/28/tool4.png)
 
 이곳에서 entity별로 package를 만들어서 repository, service, controller 를 만들어서 넣으면 된다.
 
@@ -60,7 +60,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ### 1. 전체 구조도
 
-![](/assets/images/2023-03/28/tool5.png)
+![](/assets/images/2023/03/28/tool5.png)
 
 보면 이렇게 모든게 모여있다. 
 
@@ -68,7 +68,7 @@ asset entity 말고도 다른 entity도 사용에 맞게 package를 구성하면
 
 ### 2. controller, entity, model
 
-![](/assets/images/2023-03/28/tool6.png)
+![](/assets/images/2023/03/28/tool6.png)
 
 entity package 에는 entity 뿐만 아니라 이 entity에서만 쓰는 enum 이나 converter 도 넣을 수 있다.
 
@@ -76,13 +76,13 @@ model package 에는 response 같이 응답을 담을 것들을 넣으면 된다
 
 ### 3. repository 
 
-![](/assets/images/2023-03/28/tool7.png)
+![](/assets/images/2023/03/28/tool7.png)
 
 respository package에는 queryDSL, JpaRepository 를 넣으면 된다.
 
 ### 4. service 
 
-![](/assets/images/2023-03/28/tool8.png)
+![](/assets/images/2023/03/28/tool8.png)
 
 service 는 이렇게 구성하면 된다. 
 

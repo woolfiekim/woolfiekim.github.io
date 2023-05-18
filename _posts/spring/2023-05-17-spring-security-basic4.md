@@ -69,5 +69,5 @@ public class SecurityConfig {
 
 ### 3. 설정 후 출력결과
 
-![](/assets/images/2023-05/17/rememberme.png)
+![](/assets/images/2023/05/17/rememberme.png)
 

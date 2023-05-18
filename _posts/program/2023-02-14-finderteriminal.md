@@ -24,7 +24,7 @@ ls
 
 그건 바로!!!
 
-![app](/assets/images/2023-02-14/oit.png)
+![app](/assets/images/2023/02/14/oit.png)
 
 이 어플이다. 
 
@@ -39,7 +39,7 @@ brew를 이용해서 설치를 하고,
 
 응용프로그램에 들어가서 이 앱을 파인더 위쪽에 쭉 드래그하면 
 
-![there](/assets/images/2023-02-14/check.png)
+![there](/assets/images/2023/02/14/check.png)
 
 이렇게 빨간 표시 된 부분처럼 뜨게 된다.
 
@@ -49,7 +49,7 @@ brew를 이용해서 설치를 하고,
 
 터미널아이콘을 누르면
 
-![terminal](/assets/images/2023-02-14/finder.png)
+![terminal](/assets/images/2023/02/14/finder.png)
 
 이렇게 바로 아이콘을 누른 해당 파인더의 경로로 잡힌다.
 

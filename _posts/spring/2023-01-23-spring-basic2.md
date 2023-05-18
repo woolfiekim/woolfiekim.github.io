@@ -53,7 +53,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ### 5-2 BeanFactory와 ApplicationContext
 
-![](/assets/images/2023-01-24/factory1.png)
+![](/assets/images/2023/01/24/factory1.png)
 
 - BeanFactory
     - 스프링 컨테이너의 최상위 인터페이스이다.
@@ -65,7 +65,7 @@ search: true  #이 페이지는 검색에 나옴.
     - 그래서 BeanFactory보다 부가기능이 포함된 ApplicationContext를 사용한다.
     - BeanFactory, ApplicationContext를 스프링 컨테이너라 한다.
 
-![](/assets/images/2023-01-24/factory2.png)
+![](/assets/images/2023/01/24/factory2.png)
 
 ex) 메시지 소스를 활용한 국제화 기능(한국-한국어 / 영어권-영어로 출력), 환경변수(로컬, 개발, 운영 등을 구분해서 처리), 애플리케이션 이벤트, 편리한 리소스 조회
 
