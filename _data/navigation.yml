@@ -25,6 +25,9 @@ sidebar-category:
       - title: "JPA"
         url: "/jpa"
         category: "jpa"
+      - title: "Spring Security"
+        url: "/spring-security"
+        category: "spring-security"
   - title: "Project"
     children:
       - title: "Project"

@@ -2,8 +2,8 @@
 layout: single
 title:  "[spring security basic] 3. Form logout 인증"
 categories: 
-    - spring  #카테고리
-tag: [Spring, Spring security] #태그
+    - spring-security  #카테고리
+tag: [Spring security] #태그
 toc: true  #오른쪽에 있는 목차
 toc_sticky: true #목차 고정
 author_profile: true  #왼쪽에 자기 소개란 프로필을 이 페이지에 들어갈때 끄는 기능
