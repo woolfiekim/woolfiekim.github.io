@@ -14,7 +14,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ## Remember Me 설정
 
-### 1. Remember Me Configuration 설정
+### 1. Remember Me Configuration 설정 (구버전)
 
 ```java
 @Configuration
@@ -40,7 +40,34 @@ public class SecurityConfig {
 
 ```
 
-### 2. 설정 후 출력결과
+### 2. Remember Me Configuration 설정 (신버전)
+
+```java
+@Configuration
+@EnableWebSecurity
+@NoArgsConstructor
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain fileterChain(HttpSecurity http) throws Exception {
+
+        private UserDetailsService userDetailsService;
+
+        http
+            .rememberMe(form ->
+                form
+                    .rememberMeParameter("remember")
+                    .tokenValiditySeconds(3600)
+                    .userDetailsService(userDetailsService)
+            );
+        
+        return http.build();
+    }
+}
+
+```
+
+### 3. 설정 후 출력결과
 
 ![](/assets/images/2023-05/17/rememberme.png)
 

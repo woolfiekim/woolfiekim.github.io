@@ -14,7 +14,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ## login 설정
 
-### 1. login Configuration 설정
+### 1. login Configuration 설정 (구버전)
 
 ```java
 @Configuration
@@ -27,7 +27,7 @@ public class SecurityConfig {
         http.formLogin()
             .loginPage("/loginPage") // 이걸 안쓰면 spring security에서 제공하는 기본 로그인 페이지로 가게 된다.
             .defaultSuccessUrl("/") // 로그인 성공 후 이동페이지
-            .failureUrl("/login") // 로그인 실패 시 이동페이지
+            .failureUrl("/login?error=true") // 로그인 실패 시 이동페이지 > 여기서 login url 과 failureUrl 의 경로가 같으면 안된다.
             .usernameParameter("userId") // 아이디 파라미터명 변경
             .passwordParameter("passwd") // 비번 파라미터명 변경
             .loginProcessingUrl("/login_proc") // 로그인 폼에서 제출 버튼을 누르면 호출될 URL
@@ -65,7 +65,50 @@ public class SecurityConfig {
 
 ```
 
-### 2. 설정 후 출력결과
+### 2. login Configuration 설정 (신버전 - 람다식 사용)
+
+
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain fileterChain(HttpSecurity http) throws Exception {
+
+        http
+            .authorizeHttpRequests(auth ->
+                auth
+                    .requestMatchers("/login").permitAll()
+                    .anyRequest().authenticated()
+            );
+
+        http
+            .formLogin(form ->
+                form
+                    .loginPage("/loginPage")
+                    .defaultSuccessUrl("/")
+                    .failureUrl("/login?error=true") 
+                    .usernameParameter("userId")
+                    .passwordParameter("passwd") 
+                    .loginProcessingUrl("/login_proc") 
+                    .successHandler((request, response, authentication) -> {
+                        System.out.println("authentication : " + authentication.getName());
+                        response.sendRedirect("/");
+                    })
+                    .failureHandler((request, response, exception) -> {
+                        System.out.println("exception : " + exception.getMessage());
+                        response.sendRedirect("/login?error=true");
+                    })
+            );
+        return http.build();
+    }
+}
+
+```
+
+
+### 3. 설정 후 출력결과
 
 ![](/assets/images/2023-05/15/login.png)
 

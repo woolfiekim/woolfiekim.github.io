@@ -14,7 +14,7 @@ search: true  #이 페이지는 검색에 나옴.
 
 ## login 설정
 
-### 1. logout Configuration 설정
+### 1. logout Configuration 설정 (구버전)
 
 ```java
 @Configuration
@@ -53,7 +53,37 @@ public class SecurityConfig {
 
 ```
 
-### 2. 설정 후 출력결과
+### 2. logout Configuration 설정 (신버전 - 람다식 사용)
+
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain fileterChain(HttpSecurity http) throws Exception {
+
+        http
+            .logout(form ->
+                form
+                    .logoutUrl("/logout") 
+                    .logoutSuccessUrl("/login?logout") 
+                    .addLogoutHandler((request, response, authentication) -> {
+                        HttpSession session = request.getSession();
+                        session.invalidate();
+                    })
+                    .logoutSuccessHandler((request, response, authentication) -> 
+                        response.sendRedirect("/login"))
+                    .deleteCookies("remember-me") 
+        );
+        
+        return http.build();
+    }
+}
+
+```
+
+### 3. 설정 후 출력결과
 
 ![](/assets/images/2023-05/15/logout.png)
 
