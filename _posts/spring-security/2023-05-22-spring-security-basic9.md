@@ -38,7 +38,7 @@ public class SecurityConfig {
 
 ### 2. CSRF filter 설명
 
-- 모든 api 요청에 랜덤하게 생성된 토큰을 http 파라미터로 요구한다.
+- api(get제외)나 요청 보낼 때 랜덤하게 생성된 토큰을 http 파라미터로 요구한다.
 - 요청시 전될되는 토큰 값과 서버에 저장된 실제 값과 비교 후 일치하지 않으면 요청은 실패한다.(활성화 상태)
 
 - Client
