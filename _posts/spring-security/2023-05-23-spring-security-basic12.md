@@ -82,3 +82,20 @@ public class SecurityController {
     }
 }
 ```
+
+### 2. 설명
+
+1. SecurityContext (설명할 때 S.C 로 축약해서 부르겠다.)
+   1. Authentication 객체가 저장되는 보관소로 언제든지 인증객체를 꺼내서 쓸 수 있다. 
+   2. ThreadLocal에 저장되어서 아무 곳에서나 참조가 가능하다.
+   3. 인증 완료 후 HttpSession에 인증객체가 저장되어서 전역적인 참조가 가능하다.
+2. SecurityContextHolder
+   1. S.C 객체 저장
+   2. 저장 방식은 총 3가지가 있다.
+      1. MODE_THREADLOCAL : (default) 스레드 당 S.C 객체를 할당, 보통 메인 스레드 로컬에 S.C 를 저장한다. 그래서 자식 스레드에서는 S.C 가 null 로 나온다
+      2. MODE_INHERITABLETHREADLOCAL : 메인 스레드와 자식 스레드가 동일한 S.C 를 유지한다.
+      3. MODE_GLOBAL : Static 변수에다가 S.C 를 저장한다. 
+
+Authentication 객체를 `Authentication authentication = SecurityContextHolder.getContext().getAuthentication();` 로 꺼내서 쓸 수 있다.
+
+![](/assets/images/2023/05/24/filter4.png)
