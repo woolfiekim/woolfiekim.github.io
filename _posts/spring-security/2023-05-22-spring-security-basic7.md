@@ -38,10 +38,28 @@ public class SecurityConfig {
     }
 
     @Bean
-    public void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.inMemoryAuthentication().withUser("user").password("{noop}1111").roles("USER");
-        auth.inMemoryAuthentication().withUser("sys").password("{noop}1111").roles("SYS", "USER");
-        auth.inMemoryAuthentication().withUser("admin").password("{noop}1111").roles("ADMIN", "SYS", "USER");
+    public UserDetailsService users(){
+
+        UserDetails user = User.builder()
+            .username("user")
+            .password("{noop}1111")
+            .roles("USER")
+            .build();
+
+        UserDetails manager = User.builder()
+            .username("manager")
+            .password("{noop}1111")
+            .roles("MANAGER")
+            .build();
+
+        UserDetails admin = User.builder()
+            .username("admin")
+            .password("{noop}1111")
+            .roles("ADMIN")
+            .build();
+
+        return new InMemoryUserDetailsManager(user, manager, admin);
+
         //{noop} : 어떠한 암호화를 했는 지 알려주는 것을 prefix로 붙여주는 것이다.
         //{noop} 이 뭔지 설정을 안하면 "DelegatingPasswordEncoder" 클래스에서 default 값이 따로 있어서 자동으로 설정이 된다.
     }
